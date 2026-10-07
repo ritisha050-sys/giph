@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GIPH — Government Innovation Procurement Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="shell">
+  <nav class="sidebar">
+    <div class="brand">
+      <div class="brand-seal">
+        <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="17" stroke="#E7CE9B" stroke-width="1.4"/><path d="M20 8v24M8 20h24M12 12l16 16M28 12L12 28" stroke="#E7CE9B" stroke-width="1"/><circle cx="20" cy="20" r="4" fill="#E7CE9B"/></svg>
+      </div>
+      <h1>GIPH</h1>
+      <p>Government Innovation Procurement Hub — problem to deployed solution, on one rail</p>
+    </div>
+    <ul class="stagelist" id="stagelist"></ul>
+    <div class="sidebar-foot">Prototype build · mock data<br>for demonstration purposes</div>
+  </nav>
+
+  <main class="main" id="main"></main>
+</div>
+
+<div id="modal-root"></div>
+
+<!-- Data & logic, loaded in dependency order (plain scripts, shared global scope) -->
+<script src="js/data.js"></script>
+<script src="js/helpers.js"></script>
+<script src="js/render-shell.js"></script>
+<script src="js/view-intake.js"></script>
+<script src="js/view-matching.js"></script>
+<script src="js/view-pilot.js"></script>
+<script src="js/view-eval.js"></script>
+<script src="js/view-procure.js"></script>
+<script src="js/view-scale.js"></script>
+<script src="js/view-integrity.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
